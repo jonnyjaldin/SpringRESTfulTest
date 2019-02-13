@@ -33,6 +33,19 @@ public class UserController {
 		return new ResponseEntity<List<User>>(list,HttpStatus.OK);
 	}
 	
+	@RequestMapping(value = "/user/{id}", method = RequestMethod.GET, headers="Accept=application/json")
+	public ResponseEntity<User> findUserById(@PathVariable("id") int id){
+		User user = new User();
+		user.setId(id);
+		User list = userService.findUserById(user);
+		
+		if( list == null ) {
+			return new ResponseEntity<User>(HttpStatus.NO_CONTENT);
+		}
+		
+		return new ResponseEntity<User>(list,HttpStatus.OK);
+	}
+	
 	@RequestMapping(value = "/add/", method = RequestMethod.POST, headers="Accept=application/json")
 	public ResponseEntity<Void> add(@RequestBody User user){
 		userService.addUser(user);
