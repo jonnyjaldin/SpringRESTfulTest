@@ -1,4 +1,4 @@
-package springrestful_test.controller;
+package SpringRESTfulTest.controller;
 
 import java.util.List;
 
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import springrestful_test.service.UserService;
-import springrestful_test.model.*;
+import SpringRESTfulTest.service.UserService;
+import SpringRESTfulTest.model.*;
 
 @RestController
 public class UserController {

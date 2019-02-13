@@ -1,8 +1,8 @@
-package springrestful_test.dao;
+package SpringRESTfulTest.dao;
 
 import java.util.List;
 
-import springrestful_test.model.User;
+import SpringRESTfulTest.model.User;
 
 public interface UserDao {
 	

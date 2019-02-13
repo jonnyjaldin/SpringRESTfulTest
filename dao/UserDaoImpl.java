@@ -1,4 +1,4 @@
-package springrestful_test.dao;
+package SpringRESTfulTest.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -13,7 +13,7 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.stereotype.Repository;
 
-import springrestful_test.model.User;
+import SpringRESTfulTest.model.User;
 
 @Repository
 public class UserDaoImpl implements UserDao{
@@ -44,9 +44,9 @@ public class UserDaoImpl implements UserDao{
 			param.addValue("firstname", user.getFirstname());
 			param.addValue("lastname", user.getLastname());
 			param.addValue("address", user.getAddress());
-			param.addValue("city", user.getAddress());
-			param.addValue("state", user.getAddress());
-			param.addValue("zip", user.getAddress());
+			param.addValue("city", user.getCity());
+			param.addValue("state", user.getState());
+			param.addValue("zip", user.getZip());
 		}
 		
 		return param;

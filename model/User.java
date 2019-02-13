@@ -1,4 +1,4 @@
-package springrestful_test.model;
+package SpringRESTfulTest.model;
 
 public class User {
 	

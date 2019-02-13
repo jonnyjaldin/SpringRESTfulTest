@@ -1,4 +1,4 @@
-package springrestful_test.config;
+package SpringRESTfulTest.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

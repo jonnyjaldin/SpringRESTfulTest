@@ -1,8 +1,8 @@
-package springrestful_test.service;
+package SpringRESTfulTest.service;
 
 import java.util.List;
 
-import springrestful_test.model.User;
+import SpringRESTfulTest.model.User;
 
 public interface UserService {
 	public List<User> listAllUser();

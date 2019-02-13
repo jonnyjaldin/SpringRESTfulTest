@@ -1,4 +1,4 @@
-package springrestful_test.config;
+package SpringRESTfulTest.config;
 
 import javax.naming.NamingException;
 import javax.sql.DataSource;
@@ -13,7 +13,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "springrestful_test")
+@ComponentScan(basePackages = "SpringRESTfulTest")
 public class WebConfig {
 	@Autowired
 	DataSource dataSource;
